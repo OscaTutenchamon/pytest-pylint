@@ -145,4 +145,4 @@ class PyLintItem(pytest.Item, pytest.File):
 
     def reportinfo(self):
         """Generate our test report"""
-        return self.fspath, None, "[pylint] {0}".format(self.name)
+        return self.fspath, 1, "[pylint] {0}".format(self.name)
